@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rufat Sanani - Information Security Specialist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cv-container">
+  
+    <div class="cv-sidebar">
+      <div class="profile-section">
+        <img src="profile.jpg" alt="Rufat Sanani" class="profile-img">
+      </div>
+
+      <div class="contact-section">
+        <h2 class="section-title">CONTACT</h2>
+        <div class="contact-item">+994-55-123-45-67</div>
+        <div class="contact-item">rufat.sanani@example.com</div>
+        <div class="contact-item">Baku, Azerbaijan</div>
+        <div class="contact-item">linkedin.com/in/rufatsanani</div>
+      </div>
+
+      <div class="education-section">
+        <h2 class="section-title">EDUCATION 
+          <span class="dynamic-add" onclick="toggleForm('edu-form')">+ Add</span>
+        </h2>
+        <div id="edu-form" class="dynamic-form">
+          <input type="text" id="edu-years" placeholder="Years (e.g. 2015-2019)">
+          <input type="text" id="edu-school" placeholder="Institution">
+          <input type="text" id="edu-degree" placeholder="Degree">
+          <button onclick="addEducation()">Add</button>
+        </div>
+        <div id="education-items">
+          <div class="education-item">
+            <p><strong>2018 - 2020</strong><br>Baku State University<br>MSc in Information Security
+              <span class="dynamic-remove" onclick="this.parentNode.parentNode.remove()">× Remove</span>
+            </p>
+          </div>
+          <div class="education-item">
+            <p><strong>2014 - 2018</strong><br>Azerbaijan Technical University<br>BSc in Computer Science
+              <span class="dynamic-remove" onclick="this.parentNode.parentNode.remove()">× Remove</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-section">
+        <h2 class="section-title">TECHNICAL SKILLS 
+          <span class="dynamic-add" onclick="toggleForm('skill-form')">+ Add</span>
+        </h2>
+        <div id="skill-form" class="dynamic-form">
+          <input type="text" id="new-skill" placeholder="Skill name">
+          <button onclick="addSkill()">Add</button>
+        </div>
+        <div id="skills-items">
+          <div class="skill">Network Security
+            <span class="dynamic-remove" onclick="this.parentNode.remove()">× Remove</span>
+          </div>
+          <div class="skill">Penetration Testing
+            <span class="dynamic-remove" onclick="this.parentNode.remove()">× Remove</span>
+          </div>
+          <div class="skill">SIEM Solutions
+            <span class="dynamic-remove" onclick="this.parentNode.remove()">× Remove</span>
+          </div>
+          <div class="skill">Firewall Configuration
+            <span class="dynamic-remove" onclick="this.parentNode.remove()">× Remove</span>
+          </div>
+          <div class="skill">Cryptography
+            <span class="dynamic-remove" onclick="this.parentNode.remove()">× Remove</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="languages-section">
+        <h2 class="section-title">LANGUAGES</h2>
+        <div class="language">Azerbaijani (Native)</div>
+        <div class="language">English (Fluent)</div>
+        <div class="language">Russian (Intermediate)</div>
+      </div>
+    </div>
+
+    
+    <div class="cv-main">
+      <div class="header-section">
+        <h1 class="name">RUFAT SANANI</h1>
+        <h2 class="title">INFORMATION SECURITY SPECIALIST</h2>
+      </div>
+
+      <div class="profile-section">
+        <h2 class="section-title">PROFILE</h2>
+        <p class="profile-text">
+          Certified Information Security professional with 5+ years of experience in cybersecurity operations, 
+          vulnerability assessment, and security architecture design. Passionate about protecting critical 
+          infrastructure and implementing robust security measures to mitigate emerging threats.
+        </p>
+      </div>
+
+      <div class="experience-section">
+        <h2 class="section-title">WORK EXPERIENCE 
+          <span class="dynamic-add" onclick="toggleForm('exp-form')">+ Add</span>
+        </h2>
+        <div id="exp-form" class="dynamic-form">
+          <input type="text" id="exp-company" placeholder="Company">
+          <input type="text" id="exp-years" placeholder="Years">
+          <input type="text" id="exp-position" placeholder="Position">
+          <textarea id="exp-duties" placeholder="Responsibilities (one per line)"></textarea>
+          <button onclick="addExperience()">Add</button>
+        </div>
+        <div id="experience-items">
+          <div class="experience-item">
+            <div class="job-header">
+              <strong>National Cybersecurity Center</strong>
+              <span class="date">2021 - Present</span>
+            </div>
+            <div class="position">Senior Security Analyst
+              <span class="dynamic-remove" onclick="this.parentNode.parentNode.remove()">× Remove</span>
+            </div>
+            <ul class="responsibilities">
+              <li>Conduct regular security audits and vulnerability assessments</li>
+              <li>Develop and implement security policies and procedures</li>
+              <li>Lead incident response team for security breaches</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-header">
+              <strong>Bank Respublika</strong>
+              <span class="date">2019 - 2021</span>
+            </div>
+            <div class="position">Network Security Engineer
+              <span class="dynamic-remove" onclick="this.parentNode.parentNode.remove()">× Remove</span>
+            </div>
+            <ul class="responsibilities">
+              <li>Managed firewall and intrusion prevention systems</li>
+              <li>Implemented SIEM solutions for real-time monitoring</li>
+              <li>Conducted security awareness training for staff</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="certifications-section">
+        <h2 class="section-title">CERTIFICATIONS</h2>
+        <div class="certifications-grid">
+          <div class="certification-item">
+            <p><strong>Certified Information Systems Security Professional (CISSP)</strong><br>(ISC)² - 2022</p>
+          </div>
+          <div class="certification-item">
+            <p><strong>Certified Ethical Hacker (CEH)</strong><br>EC-Council - 2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
